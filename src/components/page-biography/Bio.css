@@ -1,0 +1,79 @@
+.bio-description-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bio-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+  color: white;
+  text-align: left;
+}
+
+.bio-title-2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  text-align: left;
+}
+
+.bio-description-box {
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 0 5px rgb(204, 0, 255);
+}
+
+.special-word{
+    color: greenyellow
+}
+
+.bio-description-box img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.dev-icons-container {
+  display: flex;
+}
+
+.dev-icons-container img {
+  width: 30;
+  height: 35px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bio-description-container {
+    display: flex;
+    width: 60%;
+  }
+  .bio-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+  }
+  .bio-title-2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  .dev-icons-container img {
+    width: 30;
+    height: 25px;
+    padding: 5px;
+  }
+}

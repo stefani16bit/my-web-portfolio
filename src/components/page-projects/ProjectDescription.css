@@ -1,0 +1,24 @@
+.project-title-description-container-holder {
+  width: 50%;
+  height: 50%;
+}
+
+.project-title-description-container {
+  width: auto;
+  height: min-content;
+}
+
+.project-description-title,
+.project-description {
+  color: white;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.project-description {
+  border: 1px;
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: rgb(204, 0, 255) 0px 0px 7px;
+  padding: 20px;
+}

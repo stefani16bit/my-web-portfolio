@@ -1,0 +1,29 @@
+body,
+html {
+  background-color: #1e0030; overflow: hidden;
+}
+
+.div-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.biography-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .biography-container {
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,39 @@
+.digital-art-container {
+  display: flex;
+}
+
+.digital-art-container img {
+  width: 550px;
+}
+
+.digital-art {
+  animation: glowing 1.5s infinite alternate, moving 2s infinite alternate;
+}
+
+@keyframes glowing {
+  0% {
+    filter: drop-shadow(0 0 10px rgb(195, 0, 255));
+  }
+  100% {
+    filter: drop-shadow(0 0 30px rgba(255, 0, 221, 0.8));
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .digital-art-container img {
+    padding-top: 50px;
+    width: 250px;
+  }
+}

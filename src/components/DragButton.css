@@ -1,0 +1,61 @@
+.drag-up-button {
+  background-color: rgb(204, 0, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.drag-up {
+  margin-top: 90px;
+
+}
+
+.drag-down {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.drag-up-button:hover {
+  box-shadow: 0 0 20px rgb(204, 0, 255);
+  animation: growButton 0.3s ease forwards;
+}
+
+.drag-up-button:not(:hover) {
+    animation: shrinkButton 0.3s ease reverse forwards;
+  }
+
+@keyframes growButton {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shrinkButton {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+
+@media only screen and (max-width: 768px) {
+
+  .drag-up-button-container{
+    padding-bottom: 70px;
+    padding-top: 30px;
+  }  
+  .drag-up-button {
+    padding: 5px 11px;
+    font-size: 0.8rem;
+  }
+}
+

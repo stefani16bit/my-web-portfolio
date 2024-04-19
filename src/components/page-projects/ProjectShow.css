@@ -1,0 +1,94 @@
+.left-button,
+.right-button {
+  background-color: rgb(204, 0, 255);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  margin: -35px;
+  z-index: 10;
+}
+
+.left-button:hover, .right-button:hover {
+  box-shadow: 0 0 20px rgb(204, 0, 255);
+  animation: growButton 0.3s ease forwards;
+}
+
+.left-button:not(:hover), .right-button:not(:hover) {
+  animation: shrinkButton 0.3s ease reverse forwards;
+}
+
+@keyframes growButton {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shrinkButton {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.buttons-container {
+  column-gap: 15px;
+  padding-left: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.project-image-display-container-holder {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-image-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-image-display-container-left {
+  animation: slide-left 1s forwards;
+}
+
+.slide-image-display-container-right {
+  animation: slide-right 1s forwards;
+}
+
+.project-image {
+  width: 100%;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
